@@ -38,3 +38,4 @@ print("=" * 66)
 # Print the unique values in the Contract column — you will notice typos
 print(f'The unique values in the Contract column:-\n')
 print(f"{df['Contract'].unique()}")
+
