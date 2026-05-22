@@ -83,3 +83,4 @@ print(f'{df.isnull().sum()}')
 
 df.to_csv("clean_churnguard_data.csv" , index=False)
 
+print(df['PaymentMethod'].unique())
