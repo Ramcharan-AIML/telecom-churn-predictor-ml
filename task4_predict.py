@@ -98,6 +98,7 @@ df['Contract'] = df["Contract"].map(contract_ordinal)
 x = df[['tenure', 'SeniorCitizen', 'MonthlyCharges', 'TotalCharges', 'Contract']]
 y = df['Churn']
 
+# Scaling the full dataset
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(x)
 
