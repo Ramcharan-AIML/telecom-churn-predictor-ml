@@ -83,7 +83,7 @@ print(f'{df.isnull().sum()}')
 
 
 # -----------------------------------------------------------------------------
-# Task - 4
+# Task - 4 (Predicting by user)
 
 # Encode Churn
 df['Churn'] = df['Churn'].map({"Yes": 1, "No": 0})
