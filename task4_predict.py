@@ -102,7 +102,7 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(x)
 
 model = LogisticRegression(max_iter=1000)
-model.fit(X_scaled, y)          # ✅ X_scaled — not x
+model.fit(X_scaled, y)          
 
 # --- inputs ---
 tenure   = int(float(input("Enter the tenure(Months):- ")))
@@ -121,11 +121,7 @@ if prediction == 1:
     print("  Prediction: This customer is likely to CHURN.")
     print(f"  Churn probability : {probability[1]:.1%}")
     print(f"  Stay  probability : {probability[0]:.1%}")
-    print()
-    print("  Recommended action: Reach out with a retention offer.")
 else:
     print("  Prediction: This customer is likely to STAY.")
     print(f"  Stay  probability : {probability[0]:.1%}")
     print(f"  Churn probability : {probability[1]:.1%}")
-    print()
-    print("  Recommended action: No immediate action needed.")
