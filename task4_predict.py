@@ -102,6 +102,7 @@ y = df['Churn']
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(x)
 
+# Training the full scaled dataset
 model = LogisticRegression(max_iter=1000)
 model.fit(X_scaled, y)          
 
